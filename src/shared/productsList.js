@@ -101,6 +101,12 @@ export const PRODUCTS = [
     price: '2,500 won',
     rating: 236
   },
+  { id: 17, 
+    image: 'assets/images/img-18.png',
+    name: '[What happen] How to create', 
+    price: '2,500 won',
+    rating: 236
+  },
   { id: 18, 
     image: 'assets/images/img-19.png',
     name: '[What happen] How to create', 

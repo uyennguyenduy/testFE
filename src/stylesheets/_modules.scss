@@ -1,0 +1,77 @@
+.bg-introduction { 
+  max-width: 100%;
+  height: auto;
+  background-image: url("../shared/introduction-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bg-best {
+  max-width: 100%;
+  height: 100%;
+  background-image: url("../shared/bes-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bg-story {
+  max-width: 100%;
+  height: auto;
+  background-color: $blue;
+  background-image: $obj1, $obj3, $obj2, $obj5, $obj4, $obj6, $obj7;
+  background-repeat: no-repeat;
+  background-position: 10% 15%, 90% 15%, 95% 20%, 95% 100%, 100% 100%, 0 100%, 10% 100%;
+  background-size: 10%;
+}
+.bg-window {
+  max-width: 80%;
+  height: auto;
+  background-image: url("../shared/window.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-issue {
+  background-color: $ndyellow;
+}
+.bg-orange {
+  background-color: $orange;
+}
+.bg-nddark {
+  background-color: $nddark;
+}
+.card-best {
+  position: relative;
+  &-tag {
+    position: absolute;
+    top: -8%;
+ 
+  }
+  &-box {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    bottom: -5%;
+    transform: translate((-50%, 5%));
+    z-index: 1;
+    padding: 8px 12px;
+    border: 3px solid black;
+    background-color: $white;
+
+  }
+}
+
+.card {
+  width: 18%;
+  padding: 5px;
+}
+.btn {
+  margin: auto;
+  width: 199px;
+  padding: 10px;
+  border: solid 3px $dark;
+  background-color: $white;
+  color: $dark;
+  font-family: $main-font;
+  font-size: 23px;
+  font-weight: 800;
+  text-align: center;
+}

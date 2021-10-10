@@ -1,0 +1,50 @@
+// set grid view
+@for $i from 1 to 12 {
+  .col-#{$i} {width: 100%/12 * $i;}
+}
+.row {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+//set padding 
+@for $p from 1 to 6 {
+  .p-#{$p} {padding: 1em * $p;}
+}
+@for $p from 1 to 6 {
+  .pt-#{$p} {padding-top: 1em * $p;}
+}
+@for $p from 1 to 6 {
+  .pl-#{$p} {padding-top: 1em * $p;}
+}
+@for $p from 1 to 6 {
+  .pr-#{$p} {padding-top: 1em * $p;}
+}
+//
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center
+}
+
+.layout-best {
+  @extend .col-6;
+  @extend .color-danger;
+  margin: auto;
+  text-align: center;
+}
+.demo {
+  @extend .p-5;
+  margin-top: -3em;
+}
+.layout-window {
+  @extend .bg-window;
+  margin: auto;
+  margin-bottom: 2em;
+  padding: 2em;
+  div {
+    margin-left: 28em;
+  }
+}
