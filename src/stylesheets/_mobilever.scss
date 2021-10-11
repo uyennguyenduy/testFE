@@ -1,0 +1,87 @@
+@media screen and (max-width: $breakpoints-sm) {
+  body {
+    font-size: 10px;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    &-brand {
+      width: 70%;
+      margin-left: -4em;
+    }
+    &-toggler {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0.5em;
+      right: 1em;
+    }
+    &-nav {
+      flex-direction: column;
+      .nav-item {
+        padding-top: 1em;
+      }
+    }
+  }
+  .layout-intro {
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    div {
+      width: 100%;
+    }
+  }
+  .layout-best {
+    padding: 1em;
+    @for $i from 1 to 12 {
+      .col-#{$i} {width: 80%}
+    }
+  }
+  .card-best {
+    margin-bottom: 4em;
+    &-box {
+      padding: 0.2em;
+    }
+  }
+  .card-product {
+    width: 33%;
+  }
+  .layout-story, .layout-issue{
+    div {
+      width: 100%;
+    }
+  }
+  .layout-window {
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    div {
+      width: 100%;
+    }
+  }
+  .layout-news {
+    flex-wrap: wrap;
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
+  }
+  .layout-obj {
+    display: none;
+  }
+  .layout-video {
+    padding: 2em;
+    div {
+      width: 100%;
+    }
+  }
+  .layout-footer > {
+    .first > {
+      flex-direction: column;
+      div {
+        width: 100%;
+        padding: 0.3em;
+      }
+    }
+  }
+}

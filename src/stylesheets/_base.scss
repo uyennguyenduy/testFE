@@ -1,7 +1,27 @@
+body {
+  color: $body;
+  font-size: 16px;
+}
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   object-fit: scale-down;
   max-width: 100%;
+}
+h1 {@extend .heading1;}
+h2 {@extend .heading2;}
+h3 {@extend .heading3;}
+h4 {@extend .heading4;}
+h5 {@extend .heading5;}
+h6 {@extend .heading6;}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(70);
+  }
+}
+ul {
+  list-style-type: none;
 }

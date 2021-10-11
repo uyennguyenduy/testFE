@@ -1,16 +1,19 @@
 export function VideoComp() {
   return (
-    <div>
-      <div className="d-flex">
-        <div className="col-6 color-nddark text-center">
-          <h1 className="heading-bold1">HAPPENED'S ISSUE</h1>
-          <p className="pt-1">How to create mobile-optimized videos in minutes. Not a designer, 
+    <div className="layout-video">
+      <div className="row">
+        <div className="col-6 body text-center">
+          <h2 className="heading2-bolder body">HAPPENED'S ISSUE</h2>
+          <p className="body1 pt-1">How to create mobile-optimized videos in minutes. Not a designer, 
               every team makes a lot of videos Can be trimmed. Take the first 
           </p>
-          <button>SEE MORE</button>
+          <button className="btn mt-1 mb-2">SEE MORE</button>
         </div>
       </div>
-      <img src="assets/images/video.png" alt="video" width="100"/>
+      <div className="mb-4">
+        <img src="assets/images/video.png" alt="video" width="70%"/>
+      </div>
+      
     </div>
   )
 }

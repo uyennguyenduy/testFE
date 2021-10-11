@@ -1,50 +1,123 @@
-// set grid view
-@for $i from 1 to 12 {
-  .col-#{$i} {width: 100%/12 * $i;}
-}
-.row {
-  content: "";
-  clear: both;
-  display: table;
-  
-}
-//set padding 
-@for $p from 1 to 6 {
-  .p-#{$p} {padding: 1em * $p;}
-}
-@for $p from 1 to 6 {
-  .pt-#{$p} {padding-top: 1em * $p;}
-}
-@for $p from 1 to 6 {
-  .pl-#{$p} {padding-top: 1em * $p;}
-}
-@for $p from 1 to 6 {
-  .pr-#{$p} {padding-top: 1em * $p;}
-}
-//
-.d-flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center
-}
 
+//navbar
+  .navbar {
+    @extend .body3;
+    @extend .p-1;
+    background-color: $body;
+    color: $white;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+    &-toggler {
+      cursor: pointer;
+      display: none;
+      font-size: 1.5em;
+      &:hover {
+        color: $warning1;
+      }
+    }
+    &-collapse {
+      display: block;
+    }
+    &-nav {
+      display: flex;
+      justify-content: space-evenly;
+      .nav-link {
+        cursor: pointer;
+        &:hover {
+          color: $danger1;
+        }
+      }
+    }
+  }
+
+.layout-intro {
+  @extend .bg-introduction;
+  @extend .p-6;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+  height: auto;
+  color: $white;
+}
 .layout-best {
-  @extend .col-6;
-  @extend .color-danger;
-  margin: auto;
+  @extend .bg-best;
+  @extend .p-4;
+  max-width: 100%;
+  height: 100%;
+  color: $danger1;
   text-align: center;
 }
-.demo {
+.layout-story {
+  @extend .bg-story;
   @extend .p-5;
-  margin-top: -3em;
+  @extend .mt-4;
+  max-width: 100%;
+  height: auto;
 }
 .layout-window {
   @extend .bg-window;
+  @extend .p-2;
+  display: flex;
+  justify-content: flex-end;
   margin: auto;
-  margin-bottom: 2em;
-  padding: 2em;
-  div {
-    margin-left: 28em;
+  margin-top: 4em;
+  max-width: 80%;
+  height: auto;
+}
+.layout-issue {
+  @extend .bg-warning2;
+  position: relative;
+  padding-bottom: 6em;
+}
+.layout-news {
+  display: flex;
+  flex-wrap: nowrap;
+  &-banner {
+    @extend .bg-danger2;
+    @extend .p-1;
+    width: 15em;
+    text-align: center;
   }
+}
+
+.layout-video {
+  @extend .bg-video;
+  @extend .p-5;
+  
+  max-width: 100%;
+  height: auto;
+}
+
+//objects layout
+.obj {
+    position: absolute;
+    z-index: 1;
+}
+.obj1 {
+  @extend .obj;
+  top: 15%;
+  right: 3%;
+}
+.obj2 {
+  @extend .obj;
+  top: 3%;
+  right: 3%;
+}
+.obj3 {
+  @extend .obj;
+  bottom: 7%;
+  left: 10%
+}
+.obj4 {
+  @extend .obj;
+  top: 45%;
+  left: 17%
+}
+.obj5 {
+  @extend .obj;
+  bottom: 10%;
+  right: 17%;
 }

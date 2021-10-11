@@ -1,0 +1,63 @@
+@import "./variables";
+$headings: (
+  heading1: $heading1,
+  heading2: $heading2,
+  heading3: $heading3,
+  heading4: $heading4,
+  heading5: $heading5,
+  heading6: $heading6,
+);
+$titles: (
+  title1: $title1,
+  title2: $title2
+);
+$bodies: (
+  body1: $body1,
+  body2: $body2,
+  body3: $body3
+);
+//declare heading class
+@each $name, $hsize in $headings {
+  .#{$name} {
+    font-size: $hsize;
+    font-family: $main-font;
+    font-weight: 700;
+  }
+}
+@each $name, $size in $headings {
+  .#{$name}-bolder {
+    font-size: $size;
+    font-family: $main-font;
+    font-weight: 800;
+  }
+}
+//declare title class
+@each $title, $tsize in $titles {
+  .#{$title} {
+    font-size: $tsize;
+    font-family: $main-font;
+    font-weight: 700;
+  }
+}
+@each $title, $tsize in $titles {
+  .#{$title}-bolder {
+    font-size: $tsize;
+    font-family: $main-font;
+    font-weight: 800;
+  }
+}
+//declare body class
+@each $body, $bsize in $bodies {
+  .#{$body} {
+    font-size: $bsize;
+    font-family: $main-font;
+    font-weight: 400;
+  }
+}
+@each $body, $bsize in $bodies {
+  .#{$body}-kr {
+    font-size: $bsize;
+    font-family: $nd-font;
+    font-weight: 400;
+  }
+}

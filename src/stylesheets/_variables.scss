@@ -16,107 +16,35 @@ $vid-obj6: url('../shared/video-object-06.png');
 $vid-obj7: url('../shared/video-object-07.png');
 $vid-obj8: url('../shared/video-object-08.png');
 $vid-obj9: url('../shared/video-object-09.png');
-//font variables
+//fonts
 $main-font: 'Montserrat';
 $nd-font: 'NotoSansCJKkr';
-$aligns: (left, center, right);
+$heading1: 3.43em;
+$heading2: 3.125em;
+$heading3: 2.81em;
+$heading4: 1.86em;
+$heading5: 1.56em;
+$heading6: 0.88em;
+$title1: 1.25em;
+$title2: 1.125em;
+$body1: 1.25em;
+$body2: 1em;
+$body3: 0.875em;
+$btn: 1.44em;
 
 //color variables
 $white: #ffffff;
-$danger: #f96400;
-$orange: #ff5500;
-$dark: #222222;
-$nddark: #110e03;
-$gray: #666666;
-$ndgray: #a9a9a9;
-$blue: #0565bb;
-$yellow: #fcd32a;
-$ndyellow: #fccb05;
+$danger1: #f96400;
+$danger2: #ff5500;
+$dark1: #222222;
+$dark2: #110e03;
+$secondary: #666666;
+$muted: #a9a9a9;
+$primary: #0565bb;
+$warning1: #fcd32a;
+$warning2: #fccb05;
 $body: #111111;
-//font theme
-.heading-bold {
-  font-family: $main-font, sans-serif;
-  font-size: 3.125em;
-  font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 5px;
-}
-.heading-bold1 {
-  font-family: $main-font;
-  font-size: 45px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: 4.5px;
-}
-.heading-bold2 {
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.86;
-  letter-spacing: normal;
-}
-.heading-bolder {
-  @extend .heading-bold;
-  font-weight: 800;
-}
-.heading-bolder1 {
-  @extend .heading-bolder;
-  font-size: 25px;
- 
-}
-.heading-bolder2 {
-  @extend .heading-bolder;
-  font-size: 30px;
- 
-}
-.text-body {
-  font-family: $main-font, sans-serif;
-  font-size: 1.25em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.75;
-  letter-spacing: normal;
-}
-.text-emphasize {
-  @extend .text-body;
-  font-size: 1em;
-  font-weight: 800;
-}
-.text-kr-body {
-  font-family: $nd-font;
-  font-size: 16px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: center;
-}
-.text-kr-body1 {
-  @extend .text-kr-body;
-  font-size: 14px;
-}
-//color theme
-.color-white {
-  color: $white;
-}
-.color-yellow {
-  color: $yellow;
-}
-.color-danger {
-  color: $danger;
-}
-.color-nddark {
-  color: $nddark;
-}
-// aligns
-@each $align in right, center, left {
-  .text-#{$align} {text-align: $align;}
-}
+//aligns
+$aligns: (left, center, right);
+//breakpoints
+$breakpoints-sm: 576px;

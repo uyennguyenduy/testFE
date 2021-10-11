@@ -17,6 +17,10 @@ function App() {
       <IssueComp/>
       <VideoComp/>
       <FooterComp/>
+   
+     
+      
+      
     </div>
   );
 }
